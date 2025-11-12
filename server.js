@@ -27,7 +27,7 @@ app.post("/api/data", async (req, res) => {
       length,
       breadth,
       height,
-    } = body;
+    } = req.body;
 
     const payload = {
       pickup_pincode: pickup_pincode,
